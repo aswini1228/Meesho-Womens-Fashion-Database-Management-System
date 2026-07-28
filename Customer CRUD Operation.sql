@@ -5,7 +5,6 @@ SQL> CREATE TABLE Customer (
   5      Phone_Number VARCHAR2(15) UNIQUE,
   6      Address VARCHAR2(100)
   7  );
-DROP TABLE Customer;
 Table created.
 
 SQL> INSERT INTO Customer VALUES (101,'Ananya','ananya@gmail.com','9876543210','Chennai');

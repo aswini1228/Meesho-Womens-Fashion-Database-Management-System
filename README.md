@@ -1,6 +1,6 @@
 # MEESHO WOMEN'S FASHION DATABASE MANAGEMENT SYSTEM
 
-## 📖 Overview
+##  Overview
 
 This repository contains the complete design and implementation of the **Meesho Women's Fashion Database Management System**, developed as an academic Database Management System (DBMS) project. The project focuses on designing a relational database for an e-commerce platform to efficiently manage customers, sellers, categories, products, orders, payments, and delivery information.
 
@@ -16,7 +16,7 @@ To overcome these challenges, this project proposes a structured relational data
 
 ---
 
-# 🎯 Project Objectives
+#  Project Objectives
 
 - Design a relational database for an e-commerce platform.
 - Manage customer and seller information efficiently.
@@ -29,7 +29,7 @@ To overcome these challenges, this project proposes a structured relational data
 
 ---
 
-# 📋 Project Description
+#  Project Description
 
 The database is designed to manage the following modules:
 
@@ -45,7 +45,7 @@ The project applies DBMS concepts such as Entity Relationship Modeling, Relation
 
 ---
 
-# 🚀 Features
+#  Features
 
 - Customer Management
 - Seller Management
@@ -60,7 +60,7 @@ The project applies DBMS concepts such as Entity Relationship Modeling, Relation
 
 ---
 
-# 📊 System Flowchart
+#  System Flowchart
 
 ```text
 START
@@ -120,7 +120,7 @@ END
 
 ---
 
-# 🗂 Database Modules
+#  Database Modules
 
 - Customer
 - Seller
@@ -132,7 +132,7 @@ END
 
 ---
 
-# 📌 Project Workflow
+#  Project Workflow
 
 ```text
 Business Requirement Analysis
@@ -208,7 +208,7 @@ GitHub Repository
 
 ---
 
-# 📂 Repository Contents
+#  Repository Contents
 
 - Business Requirement Analysis
 - Requirement Analysis
@@ -225,7 +225,7 @@ GitHub Repository
 
 ---
 
-# 📚 DBMS Concepts Applied
+#  DBMS Concepts Applied
 
 - Business Requirement Analysis
 - Requirement Analysis
@@ -248,7 +248,7 @@ GitHub Repository
 
 ---
 
-# 🎓 Learning Outcomes
+#  Learning Outcomes
 
 After completing this project, I gained practical knowledge in:
 
@@ -264,7 +264,7 @@ After completing this project, I gained practical knowledge in:
 
 ---
 
-# 🔮 Future Enhancements
+#  Future Enhancements
 
 - Wishlist Management
 - Inventory Management
@@ -277,7 +277,7 @@ After completing this project, I gained practical knowledge in:
 
 ---
 
-# 👩‍💻 Author
+#  Author
 
 **Aswini Sakthi**
 

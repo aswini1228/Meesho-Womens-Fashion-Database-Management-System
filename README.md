@@ -8,7 +8,7 @@ The project demonstrates the complete database development lifecycle, including 
 
 ---
 
-# ❗ Problem Statement
+#  Problem Statement
 
 The rapid growth of e-commerce has increased the need for an efficient database system to manage customer information, women's fashion products, sellers, categories, orders, payments, and delivery records. Managing these operations manually can result in duplicate records, inconsistent data, delayed order processing, inventory issues, and difficulty retrieving business information.
 
@@ -291,10 +291,11 @@ LinkedIn: https://www.linkedin.com/in/your-linkedin-profile/
 
 ---
 
-# 📜 License
+#  License
 
 This project is developed for educational and academic purposes as part of the **Database Management System (DBMS)** course.
 
 ---
 
-⭐ If you found this project useful, don't forget to **Star ⭐ this repository!**
+
+If you found this project useful, don't forget to **Star ⭐ this repository!**

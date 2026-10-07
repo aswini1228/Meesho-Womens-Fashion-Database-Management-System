@@ -1,0 +1,57 @@
+--  Create Review Table
+CREATE TABLE Meesho_Reviews (
+    Review_ID   NUMBER PRIMARY KEY,
+    Customer_ID NUMBER,
+    Product_ID  NUMBER,
+    Review_Text VARCHAR2(500),
+    Review_Date DATE NOT NULL
+);
+
+--  Create Rating Table
+CREATE TABLE Meesho_Ratings (
+    Rating_ID   NUMBER PRIMARY KEY,
+    Customer_ID NUMBER,
+    Product_ID  NUMBER,
+    Rating      NUMBER(1) CHECK (Rating BETWEEN 1 AND 5),
+    Rating_Date DATE NOT NULL
+);
+
+--  Review Data Insertion
+INSERT INTO Meesho_Reviews VALUES (1, 101, 101, 'Excellent product and good quality', DATE '2026-10-01');
+INSERT INTO Meesho_Reviews VALUES (2, 102, 102, 'Good product and nice design', DATE '2026-10-02');
+INSERT INTO Meesho_Reviews VALUES (3, 103, 103, 'Average quality', DATE '2026-10-03');
+INSERT INTO Meesho_Reviews VALUES (4, 104, 104, 'Very useful product', DATE '2026-10-04');
+INSERT INTO Meesho_Reviews VALUES (5, 105, 105, 'Quality could be better', DATE '2026-10-05');
+COMMIT;
+
+--  Rating Data Insertion
+INSERT INTO Meesho_Ratings VALUES (1, 101, 101, 5, DATE '2026-10-01');
+INSERT INTO Meesho_Ratings VALUES (2, 102, 102, 4, DATE '2026-10-02');
+INSERT INTO Meesho_Ratings VALUES (3, 103, 103, 3, DATE '2026-10-03');
+INSERT INTO Meesho_Ratings VALUES (4, 104, 104, 5, DATE '2026-10-04');
+INSERT INTO Meesho_Ratings VALUES (5, 105, 105, 2, DATE '2026-10-05');
+COMMIT;
+
+--  Retrieve Product Review Details
+SELECT * FROM Meesho_Reviews;
+
+--  Calculate Average Product Ratings
+SELECT Product_ID,
+       AVG(Rating) AS Average_Rating
+FROM Meesho_Ratings
+GROUP BY Product_ID;
+
+-- 1 Identify Highly Rated Products
+SELECT Product_ID,
+       AVG(Rating) AS Average_Rating
+FROM Meesho_Ratings
+GROUP BY Product_ID
+HAVING AVG(Rating) >= 4;
+
+--  Product Rating Report
+SELECT COUNT(Rating) AS Total_Ratings,
+       SUM(Rating)   AS Total_Rating,
+       AVG(Rating)   AS Average_Rating,
+       MAX(Rating)   AS Highest_Rating,
+       MIN(Rating)   AS Lowest_Rating
+FROM Meesho_Ratings;
